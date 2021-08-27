@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: url('images/bg-header-desktop.png') no-repeat;
+    background-position: 0 0;
+    background-size: contain;  
+    max-width: 1500px;  
+    margin: auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.center_head {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+.desc {
+    font-size: 0.873rem;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+}
+
+.logo {
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.top_title {
+    font-size: 2rem;
+}
+
+.top_desc {
+    margin-top: 20px;
+}
+
+.btns {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active, .btn:focus {
+    outline: 1px solid hsl(201, 11%, 66%);
+}
+
+.btn_ios {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.btn_mac {
+    background-color: hsl(233, 100%, 69%);
+    margin-left: 20px;
+}
+
+.mt {
+    margin-top: 80px;
+}
+
+.keep_track_desc {
+    margin-top: 20px;
+}
+
+.features {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feature_title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.feature_desc {
+    font-size: 0.8rem;
+}
+
+.feature_img {
+    width: 45%;
+}
+
+.feature_item {
+    margin: 0 0 20px 40px;
+    width: 45%;
+}
+
+.access_desc {
+    margin-top: 20px;
+}
+
+.device_img {
+    width: 50%;
+    margin: 80px auto 0;
+}
+
+.laptop_mobile_img {
+    width: 100%;
+}
+
+.supercharge {
+    margin-top: 50px;
+}
+
+.supercharge_desc {
+    margin-top: 20px;
+}
+
+.attraction {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.attraction_item {
+    width: 25%;
+    text-align: center;
+}
+
+.attr_icon {
+    margin-bottom: 20px;
+}
+
+.attr_title {
+    margin-bottom: 20px;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.partner-img {
+    width: 100px;
+}
+
+.clipboard_title {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(200, 4%, 86%);
+    padding: 20px 0;
+}
+
+.footer_logo {
+    width: 30px;
+    height: 30px;
+}
+
+footer li {
+    margin-top: 10px;
+}
+
+footer li a {
+    color: hsl(210, 10%, 33%);
+    font-size: 0.8rem;
+}
+
+footer li a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.socials a {
+    margin-left: 20px;
+}
+
+.footer_icon {
+    width: 20px;
+}
+
+.footer_icon:hover {
+    filter: invert(65%) sepia(44%) saturate(663%) hue-rotate(122deg) brightness(86%) contrast(90%);
+}
+
+@media (max-width: 640px) {
+    .feature_item {
+        width: 60%;
+    }
+}
+
+@media (max-width: 625px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature_list {
+        margin: 80px auto 0;
+    }
+
+    .feature_item {
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .attraction {
+        width: 60%;
+        flex-direction: column;
+        margin: 80px auto 40px;
+    }
+
+    .attraction_item {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .partners {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .partner-img {
+        width: 200px;
+        margin: 40px 0;
+    }
+
+    .clipboard {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_mac {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 460px) {
+
+    body {
+        background: url('images/bg-header-mobile.png') no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+    }
+
+    .top_title {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .socials {
+        margin: 20px 0 0 0;
+    }
+
+    .footer_logo {
+        margin-bottom: 20px;
+    }
+
+    .footer_icon {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .center_head, .attraction, .feature_item, .feature_img, .device_img{
+        width: 90%;
+    }
+}
+
+@media (max-width: 220px) {
+    .partner-img {
+        width: 150px;
+    }
+}
